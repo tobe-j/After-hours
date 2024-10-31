@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Our School</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="landing-container">
+        <h1>Welcome to Our School!</h1>
+        <p>Thank you for registering! We’re excited to have you join our community.</p>
+        <p>You can explore our classes, activities, and school resources from here.</p>
+        
+        <div class="buttons">
+            <a href="classes.html" class="button">Explore Classes</a>
+            <a href="activities.html" class="button">View Activities</a>
+            <a href="profile.html" class="button">View Profile</a>
+        </div>
+    </div>
+</body>
+</html>
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.registration-container, .landing-container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+h1, h2 {
+    color: #5a67d8;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin: 15px 0 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button, .button {
+    background-color: #5a67d8;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px;
+}
+
+button:hover, .button:hover {
+    background-color: #4349b1;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+}
